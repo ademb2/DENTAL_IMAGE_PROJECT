@@ -1,0 +1,23 @@
+# config.yaml
+
+data:
+  image_dir: "data/raw/all_images"
+  label_file: "/home/boukhari/projects/dental_image_project/data/processed/dental_images.csv"
+  image_size: [224, 224]
+  batch_size: 64
+  validation_split: 0.2
+  test_split: 0.1
+  image_type: "photo"
+  binary_category: "DI_cohort"
+model:
+  name: "VGG16"
+  pretrained: true
+  num_classes: 2
+
+training:
+  epochs: 20
+  learning_rate: 0.01
+  save_path: "model_checkpoint.pth"
+
+evaluation:
+  metrics: ["accuracy", "precision", "recall", "f1_score"]

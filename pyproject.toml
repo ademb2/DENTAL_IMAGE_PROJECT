@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "dental-image-project"
+version = "0.1.0"
+description = ""
+authors = ["ademb2 <ademboukhari@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+panda = "^0.3.1"
+pyyaml = "^6.0.1"
+ipykernel = "^6.29.5"
+scikit-learn = "^1.5.1"
+opencv-python = "^4.10.0.84"
+matplotlib = "^3.9.1"
+torch = "^2.4.0"
+torchvision = "^0.19.0"
+numpy = "^1"
+pandas = "2.2.2"
+plotly = "^5.23.0"
+debugpy = "^1.8.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

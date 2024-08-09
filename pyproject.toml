@@ -19,6 +19,7 @@ numpy = "^1"
 pandas = "2.2.2"
 plotly = "^5.23.0"
 debugpy = "^1.8.5"
+seaborn = "^0.13.2"
 
 
 [build-system]

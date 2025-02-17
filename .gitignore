@@ -1,0 +1,6 @@
+.venv/
+data/*
+!data/all_images/.gitkeep
+.env
+
+

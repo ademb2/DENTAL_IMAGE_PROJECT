@@ -1,0 +1,23 @@
+# config.yaml
+
+data:
+  image_dir: "data/all_images"
+  label_file: "data/dental_images.csv"
+  image_size: [224, 224]
+  batch_size: 32
+  validation_split: 0.2
+  test_split: 0.3
+  image_type: "photo"
+model:
+  model_name: "VGG16"
+  weights: "IMAGENET1K_V1"
+  num_classes: 3
+
+training:
+  epochs: 40
+  learning_rate: 0.0001
+  save_path: "outputs/models/vgg16_new_aug"
+
+evaluation:
+  metrics: ["accuracy", "precision", "recall", "f1_score"]
+  
